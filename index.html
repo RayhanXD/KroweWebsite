@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Krowe</title>
+    <link rel="icon" href="KroweLogo.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <nav>
+        <div id="navlogo">
+            <img src="/Users/rayhanmohammad/krowewebpage/KroweLogo_1_-removebg-preview.png" alt="KroweLogo" id="logo">
+            <!-- <a id="krowe">Krowe</a> -->
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#howitworks">How It Works</a></li>
+            <li><a href="#invest">Invest</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <button class="dropdown-btn">
+            <span class="material-icons">menu</span>
+        </button>
+        <div class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#howitworks">How It Works</a>
+            <a href="#invest">Invest</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </nav>
+    <div class="grid-container">
+        <div class="grid-item" id="home">
+            <div class="leftinfo">
+                <div class="invest">
+                    <h1>Invest Into Small</h1>
+                    <h1>Businesses</h1>
+                    <h1>With <span id=krowetext>Krowe</span></h1>
+                </div>
+                <div class="discover">
+                    <a>Discover small businesses with a </a>
+                    <a>click of a </a><a href="#howitworks" id="mainButton">Button</a> and <a href="#invest" id="investButton">Invest</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item" id="mainLogo">
+            <img src="/Users/rayhanmohammad/krowewebpage/KroweLogo_1_-removebg-preview.png" alt="KroweLogo">
+        </div>
+        <div class="grid-item" id="aboutus"></div>
+        <div class="grid-item" id="item4"></div>
+        <div class="grid-item" id="item5"></div>
+        <div class="grid-item" id="item6"></div>
+        <div class="grid-item" id="item7"></div>
+        <div class="grid-item" id="item8"></div>
+        <div class="grid-item" id="item9"></div>
+        <div class="grid-item" id="item10"></div>
+        <div class="grid-item" id="item11"></div>
+      </div>
+</body>
+<script>
+    window.addEventListener("DOMContentLoaded", (e) => {
+  
+      // Original JavaScript code by Chirp Internet: www.chirpinternet.eu
+      // Please acknowledge use of this code by including this header.
+  
+      document.querySelectorAll(".fading-slideshow > li").forEach((current) => {
+        current.addEventListener("animationend", (e) => {
+          e.target.parentNode.appendChild(e.target);
+        });
+      });
+  
+    });
+  
+    document.querySelector(".dropdown-btn").addEventListener("click", function() {
+      var dropdownContent = document.querySelector(".dropdown-content");
+      if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+      } else {
+          dropdownContent.style.display = "block";
+      }
+  });
+  </script>
+</html>
