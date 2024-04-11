@@ -5,12 +5,13 @@
     <link rel="icon" href="KroweLogo.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1">
 </head>
 <body>
     <nav>
         <div id="navlogo">
-            <img src="/Users/rayhanmohammad/krowewebpage/KroweLogo_1_-removebg-preview.png" alt="KroweLogo" id="logo">
+            <img src="/Users/rayhanmohammad/Desktop/Krowe/KroweLogo_1_-removebg-preview.png" alt="KroweLogo" id="logo">
             <!-- <a id="krowe">Krowe</a> -->
         </div>
         <ul>
@@ -18,8 +19,8 @@
             <li><a href="#aboutus">About Us</a></li>
             <li><a href="#howitworks">How It Works</a></li>
             <li><a href="#invest">Invest</a></li>
+            <li><a href="#faq1">FAQ</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#faq">FAQ</a></li>
         </ul>
         <button class="dropdown-btn">
             <span class="material-icons">menu</span>
@@ -29,8 +30,8 @@
             <a href="#aboutus">About Us</a>
             <a href="#howitworks">How It Works</a>
             <a href="#invest">Invest</a>
+            <a href="#faq1">FAQ</a>
             <a href="#contact">Contact</a>
-            <a href="#faq">FAQ</a>
         </div>
     </nav>
     <div class="grid-container">
@@ -43,6 +44,7 @@
                 </div>
                 <div class="discover">
                     <a>Discover small businesses with a </a>
+                    <br>
                     <a>click of a </a><a href="#howitworks" id="mainButton">Button</a> and <a href="#invest" id="investButton">Invest</a>
                 </div>
             </div>
@@ -50,38 +52,202 @@
         <div class="grid-item" id="mainLogo">
             <img src="/Users/rayhanmohammad/krowewebpage/KroweLogo_1_-removebg-preview.png" alt="KroweLogo">
         </div>
-        <div class="grid-item" id="aboutus"></div>
-        <div class="grid-item" id="item4"></div>
-        <div class="grid-item" id="item5"></div>
-        <div class="grid-item" id="item6"></div>
-        <div class="grid-item" id="item7"></div>
-        <div class="grid-item" id="item8"></div>
-        <div class="grid-item" id="item9"></div>
-        <div class="grid-item" id="item10"></div>
-        <div class="grid-item" id="item11"></div>
+        <div class="grid-item" id="aboutus">
+            <div class="mySlides" id="newDiv1">
+                <div class="boxslider">
+                    <img src="/Users/rayhanmohammad/Desktop/Krowe/ROI.png" alt="ROI">
+                    <h1>Return On <span id="highlight">Investment</span></h1>
+                    <a>Krowe allows investors to recieve a return when funding small businesses. Invest as little as $50 to start recieving a return.</a>
+                </div>
+            </div>
+            <div class="mySlides" id="newDiv2">
+                <div class="boxslider">
+                    <img src="/Users/rayhanmohammad/Desktop/Krowe/portfolio.png" alt="portfolio">
+                    <h1>Diversify Your <span id="highlight">Portfolio</span></h1>
+                    <a>Use krow to diversify your investment portfolio by adding a small business to your portfolio. Pick from our selection of Krowe vetted businesses.</a>
+                </div>
+            </div>
+            <div class="mySlides" id="newDiv3">
+                <div class="boxslider">
+                    <img src="/Users/rayhanmohammad/Desktop/Krowe/fund.png" alt="fund">
+                    <h1>Fund Small <span id="highlight">Businesses</span></h1>
+                    <a>Help krowe businesses fuel their dreams. Help them get the funding others aren't giving them while also recieving a return.</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item" id="aboutus3">
+            <img src="/Users/rayhanmohammad/Desktop/Krowe/sp500.png">
+        </div>
+        <div class="grid-item" id="aboutus2">
+            <div class="beatingbox">
+                <h1>Invest In Returns</h1>
+                <h1><span id="highlight">Beating</span> the S&P 500</h1>
+                <div id="description">
+                    <a>With returns from the ranges of <span id="highlight">11%-31%</span> investing in Krowe small businesses beats out the 
+                        <span id="highlight">S&P 500</span> and any other long term investments. Start <span id="highlight">investing now</span> to experience these returns.</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item" id="howitworks">
+            <div id="infowrap">
+                <div id="infoboxes">
+                    <h1><span id="highlight">Business owners</span> get the funding you need with <span id="highlight">Krowe.</span></h1>
+                    <a>Get the <span id="highlight">funds you need</span> from the ones who <span id="highlight">support you</span> the most. Krowe investors help make your <span id="highlight">dreams come true.</span></a>
+                    <div id="imginfoboxes">
+                        <div>
+                            <img src="/Users/rayhanmohammad/Desktop/Krowe/business.png">
+                        </div>
+                        <div id="button-stack">
+                            <a id="first">Raise</a>
+                            <a id="second">Learn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="infowrap">
+                <div id="infoboxes">
+                    <h1>Investors <span id="highlight">earn big</span> by funding small businesses using <span id="highlight">Krowe.</span></h1>
+                    <a>Get the <span id="highlight">return on investment</span> you want while helping small business <span id="highlight">follow their dreams</span>. get paid <span id="highlight">passive income</span> from your investment while also getting a return other platforms <span id="highlight">cant give you.</span></a>
+                    <div id="imginfoboxes">
+                        <div>
+                            <img src="/Users/rayhanmohammad/Desktop/Krowe/passive.png">
+                        </div>
+                        <div id="button-stack">
+                            <a id="first">Investing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="invest">
+            <div class="grid-item" id="invest-container">
+                <div class="invest-item" id="title">
+                    <h1>How <span id="highlight">Investing</span> works <br>With <span id="highlight">Krowe</span></h1>
+                </div>
+                <div class="invest-item">
+                    <div id="step1">
+                        <h1 id="highlight">Step 1:</h1>
+                        <h2>Browse and find an investment<br>that you believe in.</h2>
+                        <div id="stepsinfo">
+                            <a>We<span id=highlight> encourage</span> our investors to invest into business that they have a <span id=highlight>passion</span> in. We have <span id="highlight">wide variety</span> of markets in order for investors to find their <span id="highlight">ideal investment.</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="invest-item">
+                    <img src="/Users/rayhanmohammad/Desktop/Krowe/findbrowser-removebg-preview.png">
+                </div>
+                <div class="invest-item">
+                    <div id="step1">
+                        <h1 id="highlight">Step 2:</h1>
+                        <h2>Do your due diligence on <br>the business.</h2>
+                        <div id="stepsinfo">
+                            <a>Once you pick a  business we encourage investors to <span id="highlight">analyze</span> the data we’ve collected on our business to see if this would be a <span id="highlight">safe investment.</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="invest-item">
+                    <img src="/Users/rayhanmohammad/Desktop/Krowe/findpaper-removebg-preview.png">
+                </div>
+                <div class="invest-item">
+                    <div id="step1">
+                        <h1 id="highlight">Step 3:</h1>
+                        <h2>Invest into the business <br>with Krowe.</h2>
+                        <div id="stepsinfo">
+                            <a>Once you feel <span id="highlight">safe</span> with investing into your desired small business. Krowe makes the process <span id="highlight">easy to start investing</span>. Once you make and verify an account click invest and begin your first <span id="highlight">Krowe venture.</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="invest-item">
+                    <img src="/Users/rayhanmohammad/Desktop/Krowe/uptrend-removebg-preview.png">
+                </div>
+                <div class="invest-item" id="group">
+                    <img src="/Users/rayhanmohammad/Desktop/Krowe/groupe.png">
+                </div>
+                <div class="invest-item" id="step2">
+                    <h1>Invest With <span id="highlight">Confidence</span></h1>
+                    <h1>Through <span id="highlight">Krowe</span></h1>
+                    <a>At <span id="highlight">Krowe</span>, we ensure that we don't endorse a business that we wouldn't <span id="highlight">feel comfortable investing in ourselves</span>. This is achieved by implementing a thorough <span id="highlight">vetting process</span>, where we examine various aspects to <span id="highlight">minimize the risks</span> for you.</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item" id="faq1">
+            <h1>FAQs</h1>
+            <div class="parent-container">
+                <ul class="faq">
+                <li>
+                    <h3 class="question">How do you make sure businesses will pay investors?
+                    <div class="plus-minus-toggle collapsed"></div>
+                    </h3>
+                    <div class="answer">We vet businesses rigorously to verify that the owners are trustworthy. We also mandate joint checking accounts for transparency, enabling investors to track fund usage and revenue updates.</div>
+                </li>
+                <li>
+                    <h3 class="question">How is the money held?
+                    <div class="plus-minus-toggle collapsed"></div>
+                    </h3>
+                    <div class="answer">
+                        Investor funds are securely managed via escrow services, with additional transparency measures like joint checking accounts to ensure responsible fund management.
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">How much money do I need to invest?
+                    <div class="plus-minus-toggle collapsed"></div>
+                    </h3>
+                    <div class="answer">
+                        Investment opportunities cater to all, starting from $50 up to $2500. Accredited investors can invest more than $2500, ensuring accessibility for all interested in supporting businesses.This is due to current CF regulation laws in place in the United States.
+                    </div>
+                </li>
+                <li>
+                    <h3 class="question">What happens if a business doesn't pay?
+                    <div class="plus-minus-toggle collapsed"></div>
+                    </h3>
+                    <div class="answer">We prioritize transparency and collaboration. In case of non-payment, we guide investors through the process, exploring options collectively, including legal recourse if necessary, ensuring fairness and trust within our community.
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item" id="contact"></div>
+        <div class="grid-item" id="footer"></div>
       </div>
 </body>
 <script>
-    window.addEventListener("DOMContentLoaded", (e) => {
-  
-      // Original JavaScript code by Chirp Internet: www.chirpinternet.eu
-      // Please acknowledge use of this code by including this header.
-  
-      document.querySelectorAll(".fading-slideshow > li").forEach((current) => {
-        current.addEventListener("animationend", (e) => {
-          e.target.parentNode.appendChild(e.target);
-        });
-      });
-  
-    });
-  
-    document.querySelector(".dropdown-btn").addEventListener("click", function() {
-      var dropdownContent = document.querySelector(".dropdown-content");
-      if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-      } else {
-          dropdownContent.style.display = "block";
-      }
-  });
+window.addEventListener("DOMContentLoaded", (e) => {
+
+document.querySelectorAll(".fading-slideshow > li").forEach((current) => {
+current.addEventListener("animationend", (e) => {
+    e.target.parentNode.appendChild(e.target);
+});
+});
+
+});
+
+document.querySelector(".dropdown-btn").addEventListener("click", function() {
+var dropdownContent = document.querySelector(".dropdown-content");
+if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+} else {
+    dropdownContent.style.display = "block";
+}
+});
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.opacity = ".3"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.opacity = "1"; 
+  setTimeout(carousel, 1750); 
+}
+
+$('.faq li .question').click(function () {
+  $(this).find('.plus-minus-toggle').toggleClass('collapsed');
+  $(this).parent().toggleClass('active');
+});
   </script>
 </html>
