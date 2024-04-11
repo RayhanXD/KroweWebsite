@@ -251,6 +251,12 @@ if (dropdownContent.style.display === "block") {
 }
 });
 
+$(document).ready(function(){
+    $(".dropdown-content a").click(function(){
+        $(".dropdown-content").hide();
+    });
+});
+
 var slideIndex = 0;
 carousel();
 
