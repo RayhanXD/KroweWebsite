@@ -373,9 +373,9 @@ body {
     padding: 4px;
 }
 #first {
-    border-radius: 20px;
+    border-radius: 14px;
     background-color: white;
-    border: 2px solid black;
+    border: 3px solid black;
     color: orange;
 }
 #first:hover {
@@ -384,9 +384,9 @@ body {
     color: black;
 }
 #second {
-    border-radius: 20px;
+    border-radius: 14px;
     background-color: white;
-    border: 2px solid black;
+    border: 3px solid black;
     color: orange;
 }
 #second:hover {
@@ -459,7 +459,6 @@ body {
 .invest-item h2 {
     padding-bottom: 5%;
 }
-
 #faq1 {
     justify-content: center;
     align-items: center;
@@ -469,7 +468,7 @@ body {
 }
 #faq1 h1 {
     font-size: 500%;
-    padding-top: 10vh;
+    padding-top: 5vh;
     border-bottom: 2.5px solid orange;
     margin-bottom: 1vh;
 }
@@ -561,6 +560,9 @@ body {
     height: auto;
     margin-bottom: 10vh;
 }
+#contact h1 {
+    text-wrap: nowrap;
+}
 #contact h3 {
     margin: 50px;
     text-wrap: nowrap;
@@ -600,61 +602,53 @@ body {
     transform: translate3d(0, 0.2em, 0);
 }
 #footer {
-    height: 15vw;
-    background-color: black;
+    height: auto;
 }
 .footer{
-    background:#000;
-    padding:30px 0px;
-    text-align:center;
-    }
-    
-    .footer .row{
-    width:100%;
-    margin:1% 0%;
-    padding:0.6% 0%;
-    color:white;
-    font-size:0.8em;
-    }
-    
-    .footer .row a{
-    text-decoration:none;
-    color:white;
-    transition:0.5s;
-    }
-    
-    .footer .row a:hover{
-    color:#fff;
-    }
-    
-    .footer .row ul{
-    width:100%;
-    }
-    
-    .footer .row ul li{
-    display:inline-block;
-    margin:0px 30px;
-    }
-    
-    .footer .row a i{
-    font-size:2em;
-    margin:0% 1%;
-    }
-    
-    @media (max-width:720px){
-    .footer{
-    text-align:left;
-    padding:5%;
-    }
-    .footer .row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
-    }
-    .footer .row a i{
-    margin:0% 3%;
-    }
-    }
+background:#000;
+padding:30px 0px;
+text-align:center;
+}
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:white;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:white;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
 @media (min-width: 1080px) 
 {
     .grid-container {
