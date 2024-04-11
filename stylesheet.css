@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Manrope;
+    font-family: Manrope, sans-serif;
     transition: all .3s ease-in-out;
     scroll-behavior: smooth;
 }
@@ -228,7 +228,7 @@ body {
     animation-direction: normal; 
     animation-timing-function: cubic-bezier(.5, 0.05, 1, .5); 
     animation-iteration-count: infinite; 
-    border: 5px solid orange;
+    border: 10px solid orange;
     border-radius: 50%;
     background-color: transparent;
 }
@@ -552,11 +552,109 @@ body {
   transition:color 0.5s ease; 
 }
 #contact {
-    border: 1px solid black;
+    background-color: #FFFAF3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 300%;
+    height: auto;
+    margin-bottom: 10vh;
+}
+#contact h3 {
+    margin: 50px;
+    text-wrap: nowrap;
+}
+#email {
+    position: relative;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 0.001%;
+    padding-bottom: 0.001%;
+    text-decoration: none;
+    color: orange;
+    text-shadow: none;
+    border-radius: 14px;
+    border: 3px solid black;
+    background-color: white;
+}
+#email:hover {
+    border-color: #FFFAF3;
+    color: black;
+    background-color: #FFFAF3;
+}
+#email::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: orange;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+#email:hover::after,
+#email:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
 }
 #footer {
-    height: 20vh;
+    height: 15vw;
+    background-color: black;
 }
+.footer{
+    background:#000;
+    padding:30px 0px;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:white;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:white;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
 @media (min-width: 1080px) 
 {
     .grid-container {
