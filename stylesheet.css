@@ -130,6 +130,11 @@ body {
     height: 100vh;
     background-color: #FFFAF3;
 }
+@media (max-width: 1080px) {
+    #home {
+        margin-top: 150px;
+    }
+}
 .leftinfo {
     margin-left: 12.5vw;
     margin-right: 7.5vw;
@@ -245,10 +250,8 @@ body {
     background-color: #FFFAF3;
 
     .section-container {
-        padding-right: 200px;
-        padding-left: 200px;
-        padding-top: 200px;
-        padding-bottom: 200px;
+        padding: 200px;
+
 
         h1 {
             font-size: 150px;
@@ -296,6 +299,16 @@ body {
         opacity: 1;
         transform: translate3d(0, 0.2em, 0);
     }
+    }
+    @media (max-width: 1080px) {
+        .section-container {
+            padding: 100px;
+        }
+    }
+}
+@media (max-width: 1080px) {
+    #comingSoon {
+        height: auto;
     }
 }
 #aboutus {
@@ -362,6 +375,11 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #FFFAF3;
+}
+@media (max-width: 1080px) {
+    #aboutus3 {
+        padding-top: 100px;
+    }
 }
 #aboutus3 img {
     width: 75%;
@@ -457,6 +475,7 @@ body {
     grid-template-columns: 1fr 1fr;
     z-index: 1;
     height: auto;
+    margin-top: 50px;
 }
 .invest-item {
     background-color: #FFFAF3;
@@ -469,8 +488,21 @@ body {
     min-height: 200px; /* Adjust this value to your needs */
 
 }
+@media (max-width: 1080px) {
+    .invest-item {
+        font-size: 48px;
+    }
+}
 .invest-item img {
-    width: 25vw;
+    width: 425px;
+}
+#stepImage {
+    padding-left: 125px;
+}
+@media (max-width: 1080px) {
+    #stepImage {
+        padding-left: 100px;
+    }
 }
 #title {
     grid-column-start: 1;
@@ -478,15 +510,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2vw;
+    font-size: 50px;
     text-wrap: nowrap;
     text-align: center;
     padding: 5%;
 }
-
 #step1 {
-    font-size: 1.4vw;
-    margin-left: 40%;
+    font-size: 24px;
+    margin-left: 30%;
+}
+@media (max-width: 1080px) {
+    #step1 {
+        margin-left: 15%;
+    }
 }
 #step1 h1 {
     font-weight: bold;
@@ -497,11 +533,11 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    font-size: 1.4vw;
+    font-size: 24px;
     padding-right: 22.5%;
     padding-left: 2.5%;
+    padding-top: 20%;
 }
-
 #step2 a {
     padding-top: 10%;
 }
@@ -509,10 +545,20 @@ body {
     margin-top: 5%;
 }
 #group {
-    padding-left: 30%;
+    padding-left: 20%;
+    padding-top: 25%;
+    padding-bottom: 10%;
     align-self: center;
     justify-content: center;
     height: 100%;
+}
+#group img {
+    width: 500px;
+}
+@media (max-width: 1080px) {
+    #group {
+        width: 750px;
+    }
 }
 .invest-item h2 {
     padding-bottom: 5%;
@@ -525,7 +571,7 @@ body {
     background-color: #FFFAF3;
 }
 #faq1 h1 {
-    font-size: 500%;
+    font-size: 600%;
     padding-top: 5vh;
     border-bottom: 2.5px solid orange;
     margin-bottom: 1vh;
