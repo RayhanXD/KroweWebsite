@@ -35,6 +35,11 @@ nav:hover {
     width: 25px;
     margin-left: 50%;
 }
+@media (max-width: 1080px) {
+    #logo {
+        width: 50px;
+    }
+}
 nav ul {
     display: flex;
     justify-content: flex-end;
@@ -98,7 +103,11 @@ nav ul li a:hover {
     z-index: 1000;
     padding: 1vh;
     margin: 1vh;
+    font-size: 25px;
     background-color: transparent;
+}
+.dropdown-btn .material-icons {
+    font-size: 50px;
 }
 @media screen and (max-width: 1020px) {
     nav ul {
@@ -132,7 +141,7 @@ body {
 }
 @media (max-width: 1080px) {
     #home {
-        margin-top: 150px;
+        margin-top: 100px;
     }
 }
 .leftinfo {
@@ -227,6 +236,11 @@ body {
     background-color: #FFFAF3;
     padding: 5%;
 }
+@media (max-width: 1080px) {
+    #mainLogo {
+        margin-bottom: 50px;
+    }
+}
 #mainLogo img {
     width: 65%;
     animation: bounce 3s; 
@@ -237,6 +251,7 @@ body {
     border-radius: 50%;
     background-color: transparent;
 }
+
 @keyframes bounce { 
     0%, 100% { 
         transform: translate3d(0, 0, 0); 
@@ -428,8 +443,15 @@ body {
     margin-bottom: 30px;
 }
 #imginfoboxes {
+    padding-top: 25px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+@media (max-width: 1080px) {
+    #imginfoboxes {
+        flex-direction: row;
+    }
 }
 #imginfoboxes img {
     width: 75%;
@@ -441,12 +463,29 @@ body {
     align-items: center;
     /* border: 1px solid black; */
     width: 100%;
+    padding-top: 40px;
 }
 #button-stack a {
     margin-bottom: 20px;
     text-wrap: nowrap;
-    font-size: 2.5vw;
+    font-size: 36px;
     padding: 4px;
+}
+#button-stack h2 {
+    font-size: 36px;
+    text-wrap: nowrap;
+    padding: 15px;
+}
+@media (max-width: 1080px) {
+    #button-stack {
+        padding-top: 5px;
+    }
+    #button-stack a {
+        font-size: 64px;
+    }
+    #button-stack h2 {
+        font-size: 64px;
+    }
 }
 #first {
     border-radius: 14px;
